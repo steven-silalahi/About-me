@@ -20,6 +20,7 @@ header {
     color: #021526;
 }
 .jumbotron h1{
+    text-align: center;
     color: rgb(0, 0, 0);
     font-size: 100px;
 }
@@ -58,4 +59,36 @@ nav a:hover{
     background: rgb(226, 226, 182);
     border-radius: 99px;
     transition: all .2s ease-in-out;
+}
+
+.home{
+    display: flex;
+    flex-wrap: wrap;
+}
+.masstext{
+    font-size: 100px;
+    flex-grow: 0;
+}
+.profilecontain{
+    display: flex;
+}
+.profilecontainer .desc{
+    margin-left: 2rem;
+    width: 30rem;
+    font-weight: 700;
+    flex-shrink: 0;
+    padding-right: 5rem;
+}
+.profilepic{
+    flex-direction: row;
+    justify-items: center;
+    position: relative;
+}
+figure{
+    position: relative;
+}
+figcaption{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    margin-left: 3em;
 }
