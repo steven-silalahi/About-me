@@ -1,94 +1,108 @@
 @import url("https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
 }
 
 body{
-    font-family: "Quicksand", sans-serif;
-    margin: 0;
-    padding: 0; 
-    overflow: auto;
-    background: rgb(226, 226, 182);
-    /*background-image: linear-gradient(to right, rgb(226, 226, 182), rgb(100, 5, 183, 30%));*/
-    color: rgb(0, 0, 0);
+    background-color: #20222e;;
 }
-
-header {
-    display: inline;
-    background-color: #000000;
-    color: #021526;
-}
-.jumbotron h1{
-    text-align: center;
-    color: rgb(0, 0, 0);
-    font-size: 100px;
-}
-
-.navbar{
-    display: inline;
-    position:relative;
-    z-index: 1;
-}
-nav {
-    background-color: #021526;
-    padding: 5px;
-    position: sticky;
-    border-bottom: 3px solid white;
-    top: 0;
-}
-   
-nav ul {
-    padding-inline: 4rem;
-    display: flex;
-    gap: 3rem;
-}
-nav li {
-    list-style-type: none;
-}
-nav a{
+li, a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
     text-decoration: none;
-    color: white;
-    font-size: 18px;
-    font-weight: 400;
-}
-nav a:hover{
-    color: black;
-    font-weight: bold;
-    padding: 5px 10px;
-    background: rgb(226, 226, 182);
-    border-radius: 99px;
-    transition: all .2s ease-in-out;
 }
 
-.home{
+header{
+    padding: 20px;
+    background-color: #24252a;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px, 10%;
+    border-bottom: 3px solid #828383;
 }
-.masstext{
-    font-size: 100px;
-    flex-grow: 0;
+
+.jumbotron{
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    cursor: pointer;
 }
-.profilecontain{
-    display: flex;
+.navbar{
+    list-style: none;
 }
-.profilecontainer .desc{
-    margin-left: 2rem;
-    width: 30rem;
-    font-weight: 700;
-    flex-shrink: 0;
-    padding-right: 5rem;
+.navbar li{
+    display: inline-block;
+    padding: 0px 20px;
 }
-.profilepic{
-    flex-direction: row;
-    justify-items: center;
+
+.navbar li a{
+    transition: all .3s ease 0s;
+}
+.navbar li a:hover{
+    color: #0088a9;
+}
+
+.resume{
+    padding: 4px;
+    margin-top: 2%;
+    padding-left: 2%;
+    font-family: "Quicksand", sans-serif;
+    color: white;
+    font-size: 30px;
+    width: 50%;
+    float: left;
+}
+
+.container{
+    width: 50%;
+    height: 100vh;
     position: relative;
+    float: right;
+    overflow: hidden;
 }
-figure{
-    position: relative;
+
+img{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    display: block;
 }
-figcaption{
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    margin-left: 3em;
+.gradient{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, #20222e, transparent);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+table {
+    border: 5px solid #edf0f1; 
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #edf0f1; 
+    padding: 8px; 
+    text-align: left; 
+}
+
+.experience{
+    margin-top: 30px;
+}
+.experience ol{
+    padding-left: 5%;
+}
+.experience li{
+    font-size: 30px;
 }
