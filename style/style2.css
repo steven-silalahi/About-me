@@ -91,3 +91,30 @@ img{
     background-color: #65fe08;
     color: #20222e;
 }
+
+@media screen and (max-width: 1628px) {
+    main {
+      flex-flow: column nowrap;
+    }
+}
+@media screen and (max-width: 1393px) {
+    .gradient{
+        display:none;
+    }
+    main{
+        font-size: smaller;
+    }
+    img{
+        width: 330px;
+        height: 660px;
+    }
+}
+@media screen and (max-width: 820px) {
+    .container{
+        display:none;
+    }
+    main{
+        font-size: smaller;
+    }
+    
+}
