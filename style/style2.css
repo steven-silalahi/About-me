@@ -53,9 +53,33 @@ header{
 }
 
 .landingpage{
-    margin: 40px;
+    padding: 4px;
+    margin-top: 10%;
     font-family: "Quicksand", sans-serif;
     color: white;
     font-size: 80px;
-    width: 500px;
+    width: 50%;
+    float: left;
+}
+
+.container{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    float: right;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+.gradient{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, #20222e, transparent);
+    position: absolute;
+    top: 0;
+    right: 0;
 }
