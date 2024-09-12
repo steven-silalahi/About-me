@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap");
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+    padding: 0; 
+    overflow: auto;
+    background: rgb(226, 226, 182);
+    /*background-image: linear-gradient(to right, rgb(226, 226, 182), rgb(100, 5, 183, 30%));*/
+    color: rgb(0, 0, 0);
+}
+
+header {
+    display: inline;
+    background-color: #000000;
+    color: #021526;
+}
+.jumbotron h1{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 100px;
+}
+
+.navbar{
+    display: inline;
+    position:relative;
+    z-index: 1;
+}
+nav {
+    background-color: #021526;
+    padding: 5px;
+    position: sticky;
+    border-bottom: 3px solid white;
+    top: 0;
+}
+   
+nav ul {
+    padding-inline: 4rem;
+    display: flex;
+    gap: 3rem;
+}
+nav li {
+    list-style-type: none;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
+nav a:hover{
+    color: black;
+    font-weight: bold;
+    padding: 5px 10px;
+    background: rgb(226, 226, 182);
+    border-radius: 99px;
+    transition: all .2s ease-in-out;
+}
+
+.home{
+    display: flex;
+    flex-wrap: wrap;
+}
+.masstext{
+    font-size: 100px;
+    flex-grow: 0;
+}
+.profilecontain{
+    display: flex;
+}
+.profilecontainer .desc{
+    margin-left: 2rem;
+    width: 30rem;
+    font-weight: 700;
+    flex-shrink: 0;
+    padding-right: 5rem;
+}
+.profilepic{
+    flex-direction: row;
+    justify-items: center;
+    position: relative;
+}
+figure{
+    position: relative;
+}
+figcaption{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    margin-left: 3em;
+}
