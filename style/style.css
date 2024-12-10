@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+html{
+    height: 100vh;
+    }
+    
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #20222e;
+    top: 0;
+    bottom: 0;
+}
+li, a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header{
+    padding: 20px;
+    background-color: #24252a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px, 10%;
+    border-bottom: 3px solid #828383;
+}
+
+.jumbotron{
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    cursor: pointer;
+}
+.navbar{
+    list-style: none;
+}
+.navbar li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navbar li a{
+    transition: all .3s ease 0s;
+}
+.navbar li a:hover{
+    color: #65fe08;
+}
+
+.resume{
+    padding: 4px;
+    margin-top: 2%;
+    padding-left: 2%;
+    font-family: "Quicksand", sans-serif;
+    color: white;
+    font-size: 30px;
+    width: 50%;
+    float: left;
+}
+
+.container{
+    width: 50%;
+    height: 100vh;
+    position: relative;
+    float: right;
+    overflow: hidden;
+}
+
+img{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+.gradient{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, #20222e, transparent);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+table {
+    border: 5px solid #edf0f1; 
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #edf0f1; 
+    padding: 8px; 
+    text-align: left; 
+}
+
+.experience{
+    margin-top: 30px;
+}
+.experience ol{
+    padding-left: 5%;
+}
+.experience li{
+    font-size: 30px;
+}
+
+@media screen and (max-width: 1628px) {
+    main {
+      flex-flow: column nowrap;
+    }
+}
+@media screen and (max-width: 1393px) {
+    .gradient{
+        display:none;
+    }
+    main{
+        font-size: smaller;
+    }
+    img{
+        width: 330px;
+        height: 660px;
+    }
+}
+@media screen and (max-width: 820px) {
+    .container{
+        display:none;
+    }
+    main{
+        font-size: smaller;
+    }
+    
+}
